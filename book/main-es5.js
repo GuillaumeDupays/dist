@@ -718,23 +718,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/material/button */
-    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/material/card */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js");
     /* harmony import */
 
 
     var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+    /* harmony import */
 
-    function BlobsComponent_img_2_Template(rf, ctx) {
+
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/material/button */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
+
+    function BlobsComponent_img_1_Template(rf, ctx) {
       if (rf & 1) {
         var _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "img", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "img", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("load", function BlobsComponent_img_2_Template_img_load_0_listener($event) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("load", function BlobsComponent_img_1_Template_img_load_0_listener($event) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7);
 
           var ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -795,32 +801,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     BlobsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: BlobsComponent,
       selectors: [["app-blobs"]],
-      decls: 3,
+      decls: 4,
       vars: 1,
-      consts: [["mat-button", "", "type", "button", 3, "click"], [3, "src", "load", 4, "ngIf"], [3, "src", "load"]],
+      consts: [[1, "blob-card"], [3, "src", "load", 4, "ngIf"], ["mat-flat-button", "", "color", "accent", "type", "button", 3, "click"], [3, "src", "load"]],
       template: function BlobsComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BlobsComponent_Template_button_click_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BlobsComponent_img_1_Template, 1, 1, "img", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BlobsComponent_Template_button_click_2_listener() {
             return ctx.toggle();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Nourir le Blob");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Nourrir le Blob");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BlobsComponent_img_2_Template, 1, 1, "img", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.toLoad);
         }
       },
-      directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]],
-      styles: ["pre[_ngcontent-%COMP%], img[_ngcontent-%COMP%] {\n  width: 100%;\n  word-wrap: break-word;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmxvYnMvRDpcXGJsb2Jjb3BpZVxcYmxvYlxcYm9vay9zcmNcXGFwcFxcYmxvYnNcXGJsb2JzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ibG9icy9ibG9icy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQUE7RUFDQSxxQkFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvYmxvYnMvYmxvYnMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwcmUsIGltZyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgd29yZC13cmFwOiBicmVhay13b3JkO1xyXG59XHJcbiIsInByZSwgaW1nIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHdvcmQtd3JhcDogYnJlYWstd29yZDtcbn0iXX0= */"]
+      directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_3__["MatButton"]],
+      styles: ["pre[_ngcontent-%COMP%], img[_ngcontent-%COMP%] {\n  width: 100%;\n  word-wrap: break-word;\n}\n\n.blob-card[_ngcontent-%COMP%] {\n  max-width: 1000px;\n  margin: 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmxvYnMvRDpcXGJsb2Jjb3BpZVxcYmxvYlxcYm9vay9zcmNcXGFwcFxcYmxvYnNcXGJsb2JzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ibG9icy9ibG9icy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQUE7RUFDQSxxQkFBQTtBQ0NGOztBREVBO0VBQ0UsaUJBQUE7RUFDQSxjQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9ibG9icy9ibG9icy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInByZSwgaW1nIHtcclxuICB3aWR0aDogMTAwJTtcclxuICB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7XHJcbn1cclxuXHJcbi5ibG9iLWNhcmQge1xyXG4gIG1heC13aWR0aDogMTAwMHB4O1xyXG4gIG1hcmdpbjogMCBhdXRvO1xyXG59XHJcblxyXG5cclxuIiwicHJlLCBpbWcge1xuICB3aWR0aDogMTAwJTtcbiAgd29yZC13cmFwOiBicmVhay13b3JkO1xufVxuXG4uYmxvYi1jYXJkIHtcbiAgbWF4LXdpZHRoOiAxMDAwcHg7XG4gIG1hcmdpbjogMCBhdXRvO1xufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -835,7 +845,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], null, null);
     })();
 
-    var URLS = ['assets/animeBlob/1.jpg', 'assets/animeBlob/2.jpg', 'assets/animeBlob/3.jpg', 'assets/animeBlob/4.jpg', 'assets/animeBlob/5.jpg', 'assets/animeBlob/6.jpg', 'assets/animeBlob/7.jpg', 'assets/animeBlob/8.jpg', 'assets/animeBlob/9.jpg', 'assets/animeBlob/10.jpg', 'assets/animeBlob/11.jpg', 'assets/animeBlob/12.jpg', 'assets/animeBlob/13.jpg', 'assets/animeBlob/14.jpg', 'assets/animeBlob/15.jpg', 'assets/animeBlob/16.jpg', 'assets/animeBlob/17.jpg', 'assets/animeBlob/18.jpg', 'assets/animeBlob/19.jpg'];
+    var URLS = ['assets/animeBlob/Blob-1.png', 'assets/animeBlob/Blob-3.png', 'assets/animeBlob/Blob-4.png', 'assets/animeBlob/Blob-5.png', 'assets/animeBlob/Blob-6.png', 'assets/animeBlob/Blob-7.png', 'assets/animeBlob/Blob-8.png', 'assets/animeBlob/Blob-9.png', 'assets/animeBlob/Blob-10.png', 'assets/animeBlob/Blob-11.png', 'assets/animeBlob/Blob-12.png', 'assets/animeBlob/Blob-13.png', 'assets/animeBlob/Blob-14.png', 'assets/animeBlob/Blob-15.png', 'assets/animeBlob/Blob-16.png', 'assets/animeBlob/Blob-17.png', 'assets/animeBlob/Blob-18.png'];
     /***/
   },
 
